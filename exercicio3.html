@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>curso javascript</title></title>
+  </head>
+  <body>
+    <ul id="myList">
+        <li>diego</li>
+        <li>gabriel</li>
+        <li>lucas</li>
+    </ul>
+
+    <input id="pegarNome" type="text" name="nome" />
+    
+    <button onclick="myFunction()">Adicionar</button>
+
+    
+    <script>
+
+        function myFunction() {
+            var node = document.createElement("li");
+            var inputValue = document.querySelector("#pegarNome").value;
+            var textnode = document.createTextNode(inputValue);
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+        
+        }
+                            
+                            
+                            
+    </script>
+
+    
+  </body>
+  </html>
